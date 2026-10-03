@@ -17,3 +17,6 @@ export async function fetchProducts() {
   const snap = await getDocs(collection(db, "products"));
   return snap.docs.map(d => ({ id: d.id, ...d.data() }));
 }
+
+// Alias so data.js keeps working
+window.fetchProductsFromSanity = fetchProducts;
