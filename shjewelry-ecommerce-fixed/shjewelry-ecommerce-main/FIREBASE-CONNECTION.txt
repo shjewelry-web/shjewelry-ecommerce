@@ -1,0 +1,11 @@
+SH Jewelry - Firebase connection installed
+
+Deploy the contents of the sh-jewelry folder to the existing storefront repository. Keep index.html at the same deployment root as before.
+
+The storefront now reads the products collection in the sh-jewelry Firebase project. The admin panel writes to the same collection. Existing public-read and admin-UID-write Firestore rules are compatible.
+
+Add products through your separate admin panel. Set status to Active and upload at least one image. Enable Featured for preferred homepage placement. Refresh the storefront to see changes; open pages do not update automatically.
+
+Sample products are no longer displayed. An empty catalogue stays empty. Existing site settings, styling, checkout and cart code are preserved. This connection does not add order management or synchronize orders to the admin panel.
+
+Validation: JavaScript syntax checks and mocked catalogue checks passed. Verify a real saved product after deployment.
