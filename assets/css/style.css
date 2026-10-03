@@ -487,6 +487,7 @@ h1,h2,h3,h4,p{ margin:0; }
 .pd-info h1{ margin-top:16px; font-size:clamp(2rem,3vw,2.6rem); }
 .pd-price{ margin-top:14px; font-size:1.4rem; color:var(--gold-soft); font-weight:600; }
 .pd-price .was{ font-size:1rem; color:var(--text-secondary); text-decoration:line-through; margin-left:10px; font-weight:400; }
+.was{ text-decoration:line-through; opacity:0.55; margin-left:6px; font-size:0.88em; font-weight:400; }
 .pd-desc{ margin-top:24px; color:var(--text-secondary); line-height:1.75; max-width:52ch; }
 .pd-meta{ margin-top:24px; display:flex; flex-direction:column; gap:10px; }
 .pd-meta-row{ display:flex; gap:10px; font-size:.88rem; color:var(--text-secondary); border-bottom:1px dashed var(--line); padding-bottom:10px; }
