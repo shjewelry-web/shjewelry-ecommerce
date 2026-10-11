@@ -55,7 +55,7 @@ const SETTINGS_FALLBACK = {
   announcementText: "",
 
   // Google Sheets Order Integration
-  googleScriptUrl: "PASTE_YOUR_GOOGLE_SCRIPT_URL_HERE",
+ googleScriptUrl: "https://script.google.com/macros/s/AKfycbwPOH3scZjOewWqKk4qMERFdJdO4P2mFow7r8yddhoHFmXjmgbmwAvcqObRZ_igbQAA-Q/exec",
 
   // Footer
   footerDescription:
