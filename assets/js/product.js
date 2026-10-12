@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   detailEl.innerHTML = `
     <div class="pd-gallery reveal">
       <div class="pd-stage" id="pdStage">
-        <img src="${escapeHtml(images[0].w1400)}" id="pdMainImg" class="${images[0].wide ? "fit-contain" : ""}" alt="${escapeHtml(product.name)}">
+        <img src="${escapeHtml(images[0].url || images[0].w1400 || images[0].w900 || '')}" id="pdMainImg" class="${images[0].wide ? "fit-contain" : ""}" alt="${escapeHtml(product.name)}">
       </div>
       ${thumbsHtml}
     </div>
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   detailEl.querySelectorAll(".pd-thumbs button").forEach(btn => {
     btn.addEventListener("click", () => {
       const idx = Number(btn.dataset.idx);
-      mainImg.src = images[idx].w1400;
+      mainImg.src = images[idx].url || images[idx].w1400 || images[idx].w900 || '';
       mainImg.classList.toggle("fit-contain", !!images[idx].wide);
       detailEl.querySelectorAll(".pd-thumbs button").forEach(b => b.classList.toggle("active", b === btn));
       stage.classList.remove("zoomed");
